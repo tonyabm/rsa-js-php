@@ -55,11 +55,11 @@ RSA算法基于一个十分简单的数论事实：<font color='red'>将两个�
 #### JS部分引入hlz_rsa.js类库，用法如下
 
     <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-    <script src="./hlz_rsa.js"></script>
+    <script src="./abm.encode.js"></script>
     <script>
         var after_enode
             ,post_data='云天河';// 待加密的数据
-        after_enode = rsa_encode( post_data ); // 经RSA加密后的数据
+        after_enode = abm_encode( post_data ); // 经RSA加密后的数据
          $.ajax({
             url:'./rsa.php',
             data:{"name":after_enode},
